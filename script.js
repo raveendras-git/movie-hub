@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     })
     .then(data => {
       movies = data.sort((a, b) => b.rating - a.rating);
-      const randomMovies = getRandomMovies(movies, 10);
+      const randomMovies = getRandomMovies(movies, 8);
       displayMovies(randomMovies);
     })
     .catch(err => {
